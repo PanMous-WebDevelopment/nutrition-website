@@ -3,7 +3,7 @@ Front-End Development
 
 Developed website with HTML5, CSS3, Bootstrap and JavaScript/jQuery.
 
-It includes BMI calculator, registration form, contact form and background animation.
+It includes BMI calculator, registration form, contact form, carousel slider and background animation.
 
 ![Screenshot_50](https://user-images.githubusercontent.com/129271569/230723933-87bf65ab-8e26-4aa6-a2ac-9cdb90354809.png)
 
