@@ -1,0 +1,659 @@
+<!DOCTYPE html> 
+
+<html lang="en">
+    <head>
+       
+
+        <title>Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+			  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+			  crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+       
+        
+
+   
+    </head>
+
+
+    <style>
+body{
+  padding:0;
+  margin:0; 
+  background-color: #242424;
+}
+    .navbar{
+        background-color:none;
+        margin:0px;
+        padding-top: 20px;
+    border-radius: 10px;
+        
+    }
+    .nav-item{
+       
+        color: white;
+        
+    }
+   
+    #demo{
+        width:auto;
+    }
+    #id_1{
+        color:black;
+        margin:10px;
+    }
+    #id_2{
+        color:black;
+        margin:10px;
+    }
+    #id_btn{
+       margin-top: 10%;
+       padding:5px;
+    }
+    .container{
+        width:auto;
+        height:auto;
+        margin: auto;
+        
+    }
+    .jumbotron{
+        padding:0px;
+        margin:0px;
+      
+    }
+   
+    
+    
+    
+    .pid{
+        color:white;
+    }
+    .headerid{
+        color:white;
+    }
+   
+    #jumbid2{
+        background-color: white;
+        margin:0px;
+        padding:0px;
+    }
+    .picture{
+    padding:70px;
+}
+
+    #jumbid3{
+    background-color: #242424;
+    min-height: 200px;
+    max-height:300px;
+    }
+    .h{
+        color:white;
+    }
+    #testimonial{
+     padding:15px;
+    }
+   
+    .h_2{
+      color:white;
+      text-size-adjust: 20px;
+    }
+    #jumbid4{
+    background-color: #131313;
+    padding-bottom:5%;
+}
+.map-container{
+height:auto;
+margin-left:50px;
+margin-right:50px;
+}
+.map-container iframe{
+
+height:auto;
+width:100%;
+margin-top:50px;
+
+}
+.contact-box{
+margin:50px;
+}
+.item {
+            background: #242424;
+            text-align: center;
+            height: auto;
+            width:auto;
+        }
+        h2 {
+            margin: 0;
+            color: #888;
+            padding-top: 80px;
+            font-size: 30px;
+        }
+#item_id{
+    height:200px;
+}
+
+
+.carousel-inner{
+  height: 100vh;
+}
+.carousel-item {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  background: no-repeat center center scroll;
+}
+@media (max-width: 576px) {
+  .carousel-inner {
+    height: 100vh;
+  }
+  .carousel-caption {
+    margin-bottom: 10%;
+    margin-right: 5%;
+    margin-left: 5%; 
+  }
+}
+
+
+.carousel-caption h5 {
+  font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 25px;
+}
+
+.carousel-caption p {
+  width: 75%;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+.navbar-light .navbar-brand {
+  color: #fff;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.navbar-light .navbar-nav .active  .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+  color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-toggler {
+  background: #fff;
+}
+
+.navbar-nav {
+  text-align: center;
+ 
+}
+
+.nav-link {
+  padding: .2rem 1rem;
+  font-size: 15px;
+    color:#242424;
+}
+.nav-link:hover{
+  font-size: 25px;
+  transition: 0.7s;
+}
+
+.nav-link.active,.nav-link:focus{
+  color: #fff;
+}
+
+.navbar-toggler {
+  padding: 1px 5px;
+  font-size: 18px;
+  line-height: 0.3;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+
+.navbar-brand{
+    background-color: 0 1px 2px rgba(0,0,0,.6);
+}
+
+#navid{
+  margin-top:10%;
+
+}
+#carousel-item-2{
+    height:80px;
+}
+.navbar.navbar-light{
+  border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-color: rgba(0,0,0,.6);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    margin-left:30%;  
+    margin-right:30%;
+}
+
+#nav_link{
+  
+  font-family: sans-serif;
+}
+
+#nav_link1{
+  color:black;
+  cursor: pointer;
+}
+#nav_link2{
+  color:black;
+  cursor: pointer;
+}
+#nav_link3{
+  color:black;
+  cursor: pointer;
+}
+#nav_link4{
+  color:black;
+  cursor: pointer;
+}
+#nav_link:hover{
+  font-size: 25px;
+  transition: 0.7s;
+ 
+}
+#registid{
+  cursor:pointer;
+}
+.btn{
+  margin-top:50px;
+  
+}
+#footer-top{
+  background-color: black;
+  padding:3%;
+  color:white;
+}
+#button-output{
+  margin:20px;
+}
+
+     </style>
+
+
+    <body>
+
+
+
+
+
+
+
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="Home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Our Team.html">Our Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="FAQs.html">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="BMI Calculator.html">BMI Calculator</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="modal" data-target="#RegisterModal" data-whatever="@mdo" id="registid">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="4000">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100 img-fluid" src="vegetables.png" alt="First slide">
+                    <div class="carousel-caption"></div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 img-fluid" src="eating.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 img-fluid" src="fruits.jpg" alt="Third slide">
+                </div>
+                <nav class="navbar navbar-expand-sm bg-none justify-content-center" id="navid">
+                    <!-- Links -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav_link2">Who are we?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav_link4">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <!--<div id="particles-js"></div>-->
+        <script type="text/javascript" src="particles.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+
+        <div class="jumbotron text-center" id="jumbid2">
+            <div class="container text-center">
+                <div class="headercontainer">
+                    <h3 class="headerid " style="padding-top:10px; color:black;">About Us</h3>
+                </div>
+            </div>
+
+            <div class="row ">
+
+                <div class=" col-xl-6 col-lg-6 col-md-4 col-sm-4 col-xs-4 text-center">
+                    <div class="videocontainer ">
+
+                        <div class="videoplayer text-center ">
+                            <h5 class="pid text-center " style="color:black;">Our Services</h5>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/InYJ80shUog" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn col-xl-4 col-lg-4 col-md-2 col-sm-2 col-xs-2" style=" text-align:justify;">
+                    <p style="color:black; display: block;">Our company is a leading nutrition company dedicated to helping individuals achieve their health goals through personalized nutrition plans and products.</p>
+                    <p style="color:black; display: block;">Our team of expert nutritionists and health coaches provide tailored guidance and support to help our clients make lasting lifestyle changes.</p>
+                    <p style="color:black; display: block;">Whether you're looking to lose weight, gain muscle, or simply improve your overall health, we are here to help you every step of the way.</p>
+                    <button onclick="window.location.href='Our Team.html';" type="button" class="btn btn-info mx-auto d-flex justify-content-center" id="id_btn">Our Team</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="jumbotron " id="jumbid4">
+            <div class="grid-container">
+                <h3 class="headerid col-sm-12 text-center" id="h" style="padding-top:10px;">Contact Us</h3>
+
+                <div class="row ">
+                    <div id="map-container-id" class="map-container col-sm-4">
+                        <iframe src="https://maps.google.com/maps?q=chicago&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                allowfullscreen></iframe>
+                    </div>
+
+                    <div class="contact-box text-center col-sm-6">
+                        <p class="pid">Contact Address<p>
+                        <p class="pid">Address: Random 120 , Manhattan</p>
+                        <p class="pid">e-mail: example@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center">
+
+                    <button type="button" class="btn btn-primary " id="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Contact Form</button>
+                </div>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Contact Form</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body text-center">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="recipient-name" class="col-form-label">Full Name:</label>
+                                        <input type="text" class="form-control" id="messagename">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="recipient-name" class="col-form-label">e-mail:</label>
+                                        <input type="text" class="form-control" id="messagemail">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="recipient-name" class="col-form-label">Subject:</label>
+                                        <input type="text" class="form-control" id="messagesubject">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="message-text" class="col-form-label">Message:</label>
+                                        <textarea class="form-control" id="messagetext"></textarea>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Send me a copy</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" id="btn_message">Submit</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade text-center" id="RegisterModal" tabindex="-1" role="dialog" aria-labelledby="RegisterModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="RegisterModalLabel">Registration Form</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="username" class="col-form-label">Username:</label>
+                                <input type="text" class="form-control" id="username">
+                            </div>
+                            <div class="form-group">
+                                <label for="pass" class="col-form-label">Password:</label>
+                                <input type="password" class="form-control" id="pass">
+                            </div>
+                            <div class="form-group">
+                                <label for="nm" class="col-form-label">Name:</label>
+                                <input type="text" class="form-control" id="nm">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="col-form-label">email:</label>
+                                <input type="text" class="form-control" id="email">
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary" id="submit_id">Register</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+
+            $(document).ready(function () {
+
+                $(function () {
+                    $('#jumbid2').hide();
+                });
+
+                $(function () {
+                    $('#jumbid3').hide();
+                });
+
+                $(function () {
+                    $('#jumbid4').hide();
+                });
+
+
+
+                $("#nav_link2").click(function () {
+                    $("#jumbid2").slideToggle();
+                });
+
+                $("#nav_link3").click(function () {
+                    $("#jumbid3").slideToggle();
+                });
+
+                $("#nav_link4").click(function () {
+                    $("#jumbid4").slideToggle();
+                });
+
+                $("#submit_id").click(function () {
+
+
+
+                    console.log($("#username").val());
+                    console.log($("#pass").val());
+                    console.log($("#nm").val());
+                    console.log($("#email").val());
+
+                    $.ajax({
+
+                        url: 'Register.php',
+                        data: 'username=' + $("#username").val() + '&pass=' + $("#pass").val() + '&nm=' + $("#nm").val() + '&email=' + $("#email").val(),
+                        type: "POST",
+                        dataType: "html",
+                        success: function (data) {
+                            alert("User with name " + $("username").val() + "succesfully registered");
+                        },
+                        failure: function () {
+                            alert("Something went wrong");
+                        }
+
+                    });
+                    window.location.replace('Home.html');
+
+
+                });
+
+                $("#btn_message").click(function () {
+
+
+
+                    console.log($("#messagename").val());
+                    console.log($("#messagemail").val());
+                    console.log($("#messagesubject").val());
+                    console.log($("#messagetext").val());
+
+                    $.ajax({
+
+                        url: 'messages.php',
+                        data: 'messagename=' + $("#messagename").val() + '&messagemail=' + $("#messagemail").val() + '&messagesubject=' + $("#messagesubject").val() + '&messagetext=' + $("#messagetext").val(),
+                        type: "POST",
+                        dataType: "html",
+                        success: function (data) {
+                            alert("User with name " + $("#messagename").val() + "succesfully submited his message");
+                        },
+                        failure: function () {
+                            alert("Something went wrong");
+                        }
+
+                    });
+                    window.location.replace('Home.html');
+
+
+                });
+
+                $("#button-output").click(function () {
+                    $(function () {
+                        $('#button-output').hide();
+                    });
+
+                    $.ajax({
+                        url: 'Client_output.php',
+                        type: 'GET',
+                        dataType: 'html',
+                        success: function (data) {
+                            $("#user-infos").html(data);
+                            console.log(data);
+                            data = $.parseJSON(data); // <-- *** parse JSON ***
+                            var html_to_append = '';
+                            $.each(data, function (i, item) {
+                                html_to_append +=
+                                    '<tr class="mt-3 text-uppercase"><td class="p-2">' +
+                                    item.name +
+                                    '</td><td class="p-2">' +
+                                    item.pass +
+                                    '</td><td class="p-2">' +
+                                    item.nm +
+                                    '</td><td class="p-2">' +
+                                    item.email +
+                                    '</td></tr>';
+                            });
+                            $("#user-infos-json").html(html_to_append);
+                        },
+                        failure: function () {
+                            alert("Something went wrong");
+                        }
+
+                    });
+
+                });
+            });
+        </script>
+
+
+
+
+
+
+
+
+
+    </body>
+
+
+
+</html>

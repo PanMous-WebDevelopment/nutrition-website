@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>BMI Caclulator</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="BMI_Calculator.js"></script>
+    </head>
+
+    <style>
+ 
+
+body{
+            padding:0;
+            margin:0;
+           
+        }
+       
+        .navbar{
+        background-color:none;
+        margin:0px;
+        padding-top: 20px;
+      border-radius: 10px;
+        
+    }
+    .container{
+        width:auto;
+        height:auto;
+        margin: auto;
+        
+    }
+    .nav-item{
+       
+        color: white;
+        
+    }
+.navbar-light .navbar-brand {
+  color: #fff;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.navbar-light .navbar-nav .active  .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+  color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-toggler {
+  background: #fff;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+
+.nav-link {
+  padding: .2rem 1rem;
+  font-size: 15px;
+    color:#242424;
+}
+.nav-link:hover{
+  font-size: 25px;
+  transition: 0.7s;
+}
+
+.nav-link.active,.nav-link:focus{
+  color: #fff;
+}
+
+.navbar-toggler {
+  padding: 1px 5px;
+  font-size: 18px;
+  line-height: 0.3;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+
+.navbar-brand{
+    background-color: 0 1px 2px rgba(0,0,0,.6);
+}
+.nav-link{
+    font-size: 15px;
+    color:#242424;
+}
+
+.navbar.navbar-light{
+  border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-color: rgba(0,0,0,.4);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    margin-left:30%;  
+    margin-right:30%;
+}
+
+
+
+#particles-js{
+   background-image:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
+   height:100%;
+   max-height:1500px;
+   width:100%;
+   position:absolute;
+  top: 0;
+  z-index:-1;
+  
+}
+
+.jumbotron{
+  margin-top: 5%;
+  margin-right:20%;
+  margin-left:20%;
+  margin-bottom:0;
+ 
+  height:100%;
+ background-image:linear-gradient(120deg, #ff6b6b,#5f27cd);
+ 
+}
+#wgh, #hgh{
+  border:none;
+  outline:none;
+  background:none;
+ margin-left:20px;
+ margin-right:20px;
+  border-bottom: 1px solid black;
+
+  width:150px;
+  
+
+}
+#radio{
+  margin-top:20px ;
+  margin-bottom:20px;
+}
+#wgh:focus, #hgh:focus{
+  border-bottom:2px solid;
+  width:200px;
+  transition:0.5s;
+
+}
+.btn{
+  margin-top:15px;  
+  border:none;
+  background-color:rgba(0,0,0,0.9);
+  width:150px;
+  border-radius:15px;
+ 
+}
+#registid{
+  cursor:pointer;
+}
+    </style>
+
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+              <a class="navbar-brand" href="#"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+              <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto ">
+                  <li class="nav-item active ">
+                    <a class="nav-link" href="Home.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Our Team.html">Our Team</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="FAQs.html">FAQs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="BMI Calculator.html">BMI Calculator</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="modal" data-target="#RegisterModal" data-whatever="@mdo" id="registid">Register</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <div  id="particles-js">
+          <script type="text/javascript" src="particles.js"></script>
+          <script type="text/javascript" src="app.js"></script>
+        </div>
+          <div class="jumbotron text-center">
+            <h2 class="h text-center ">BMI Calculator</h2>
+            
+              <h4>Count your BMI</h4>
+              <p>In the input boxes below chose your gender and write your height and your weight.</p>
+           
+                <div class="form-check-inline">
+                  <label class="form-check-label" for="radio1">
+                    <input type="radio" class="form-check-input" id="radio" name="optradio" value="option1" checked>Male
+                  </label>
+                </div>
+                <div class="form-check-inline">
+                  <label class="form-check-label" for="radio2">
+                    <input type="radio" class="form-check-input" id="radio" name="optradio" value="option2">Female
+                  </label>
+                </div>
+               <div class="row justify-content-center" >
+                <div class="form-group  ">
+                  <label for="height">Your Height (m):</label>
+                  <input type="text" class="form-control" id="hgh" name="height">
+                </div>
+                <div class="form-group ">
+                  <label for="weight">Your Weight (kg): </label>
+                  <input type="text" class="form-control text-center" id="wgh" name="weight">
+                </div>
+               </div>
+
+                <button type="submit" class="btn btn-primary" onclick="BMI()">Calculate my BMI</button>
+              
+            
+              <p class="h text-center">Your BMI is: <span id="output"></span></p>
+
+              <p class="h text-center">This means you are: <span id="comment"></span> </p> 
+          </div>
+    </body>
+
+    <div class="modal fade text-center" id="RegisterModal" tabindex="-1" role="dialog" aria-labelledby="RegisterModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="RegisterModalLabel">Registration Form</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form >
+              <div class="form-group">
+                <label for="username" class="col-form-label">Username:</label>
+                <input type="text" class="form-control"  id="username">
+              </div>
+              <div class="form-group">
+                <label for="pass" class="col-form-label">Password:</label>
+                <input type="password" class="form-control" id="pass">
+              </div>
+              <div class="form-group">
+                <label for="nm" class="col-form-label">Name:</label>
+                <input type="text" class="form-control" id="nm">
+              </div>
+            
+              <div class="form-group">
+                <label for="email" class="col-form-label">email:</label>
+                <input type="text" class="form-control" id="email">
+              </div>
+              
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary"  id="submit_id" >Register</button>
+          </div>
+        </div>
+       
+      </div>
+      
+      
+     
+    </div>
+
+
+</html>
